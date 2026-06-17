@@ -232,7 +232,9 @@ export default function RevisionPage() {
 					<Card>
 						<CardContent className="p-6">
 							<div className="flex items-start justify-between gap-3 mb-6">
-								<h2 className="text-xl font-bold">{question.title}</h2>
+								<a href={`${question.sourceUrl}`} target="_blank">
+									<h2 className="text-xl font-bold">{question.title}</h2>
+								</a>
 								<Badge variant={DIFFICULTY_VARIANT[question.difficulty]}>
 									{question.difficulty}
 								</Badge>
